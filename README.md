@@ -1,4 +1,4 @@
-# HealthyWealthyApp
+# Healthy & Wealthy App from Fayda team
 This app has been created by Fayda team for Azercell Hackathon 2022
 
 ### Notes
