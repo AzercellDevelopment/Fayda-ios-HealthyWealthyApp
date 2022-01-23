@@ -32,6 +32,7 @@ class MerchantsDetailsViewController: UIViewController {
     @IBOutlet weak var currentDiscountLbl: UILabel!
     
     @IBOutlet weak var mapView: MKMapView!
+    @IBOutlet weak var barcodeImage: UIImageView!
     @IBOutlet weak var goBtn: UIButton!
     
     override func viewDidLoad() {
@@ -48,13 +49,15 @@ class MerchantsDetailsViewController: UIViewController {
         currentEarnedDiscountView.isHidden = !(model?.isActive ?? false)
         currentStepCount.isHidden = !(model?.isActive ?? false)
         
-        self.navigationController?.hidesBottomBarWhenPushed = true
         if let merchantStatus = MerchantStatus.init(rawValue: model?.status ?? "") {
             switch merchantStatus {
             case .active:
                 goBtn.setTitle("Cancel", for: .normal)
+                mapView.isHidden = false
+                changeStateOnCompleteTask()
             case .completed:
                 goBtn.isHidden = true
+                changeStateOnCompleteTask()
             }
             singleMerchantStatus = merchantStatus
         }
@@ -115,5 +118,11 @@ class MerchantsDetailsViewController: UIViewController {
                 AlertHelper.showWarningCardAlertFromTop("Something went wrong. Please try again!")
             }
         }
+    }
+    
+    private func changeStateOnCompleteTask() {
+        mapView.isHidden = true
+        barcodeImage.isHidden = false
+        barcodeImage.image = self.generateBarcode(from: APPDefaults.getString(key: DefaultsKey.userReferenceId.rawValue) ?? "")
     }
 }

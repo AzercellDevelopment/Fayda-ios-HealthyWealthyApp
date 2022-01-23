@@ -42,7 +42,7 @@ class TransactionTableViewCell: UITableViewCell {
             titleLbl.text = model.subtitle
             titleLbl.font = UIFont.boldSystemFont(ofSize: 18)
             subtitleLbl.text = model.title
-            priceLbl.text = "-\(model.points) coins"
+            priceLbl.text = "- \(model.points) coins"
             subtitleLbl.textColor = UIColor(named: "828282")
         case .merchant:
             titleLbl.text = model.title

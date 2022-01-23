@@ -53,6 +53,7 @@
 		489759EF279D1AD40021CA31 /* LogOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489759EE279D1AD40021CA31 /* LogOutViewController.swift */; };
 		489759F3279D1CAE0021CA31 /* TransactionNotFoundCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489759F1279D1CAE0021CA31 /* TransactionNotFoundCell.swift */; };
 		489759F4279D1CAE0021CA31 /* TransactionNotFoundCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 489759F2279D1CAE0021CA31 /* TransactionNotFoundCell.xib */; };
+		489759F6279D26FF0021CA31 /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489759F5279D26FF0021CA31 /* UIViewController+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -105,6 +106,7 @@
 		489759EE279D1AD40021CA31 /* LogOutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOutViewController.swift; sourceTree = "<group>"; };
 		489759F1279D1CAE0021CA31 /* TransactionNotFoundCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionNotFoundCell.swift; sourceTree = "<group>"; };
 		489759F2279D1CAE0021CA31 /* TransactionNotFoundCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransactionNotFoundCell.xib; sourceTree = "<group>"; };
+		489759F5279D26FF0021CA31 /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
 		6355EE081B21B1C53BF7BD68 /* Pods-HealthyWealthy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthyWealthy.debug.xcconfig"; path = "Target Support Files/Pods-HealthyWealthy/Pods-HealthyWealthy.debug.xcconfig"; sourceTree = "<group>"; };
 		F5A1A1661710516EBAB706B4 /* Pods_HealthyWealthy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HealthyWealthy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -290,6 +292,7 @@
 			isa = PBXGroup;
 			children = (
 				489759B3279C7ED70021CA31 /* UIImageView+Ext.swift */,
+				489759F5279D26FF0021CA31 /* UIViewController+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -559,6 +562,7 @@
 			files = (
 				489759E7279D0D3D0021CA31 /* RoundImageView.swift in Sources */,
 				489759C9279CA68F0021CA31 /* MerchantModelList.swift in Sources */,
+				489759F6279D26FF0021CA31 /* UIViewController+Ext.swift in Sources */,
 				489759AA279C464D0021CA31 /* SignUpVC.swift in Sources */,
 				489759A4279C3F100021CA31 /* APPDefaults.swift in Sources */,
 				489759CE279CC4310021CA31 /* MerchantStatus.swift in Sources */,

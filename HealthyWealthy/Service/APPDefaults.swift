@@ -11,6 +11,7 @@ enum DefaultsKey: String {
     case token = "token"
     case loginned = "loginned"
     case lastSyncDate = "lastSyncDate"
+    case userReferenceId = "userReferenceId"
 }
 
 class APPDefaults {

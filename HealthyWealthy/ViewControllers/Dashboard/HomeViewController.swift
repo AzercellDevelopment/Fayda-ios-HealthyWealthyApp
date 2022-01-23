@@ -11,6 +11,7 @@ import CoreMotion
 class HomeViewController: UIViewController {
     
     let coreMotion = CoreMotionHelper.shared
+    lazy var refreshControl = UIRefreshControl()
     
     var transactionList: [TransactionCellModel] = []
     
@@ -46,6 +47,10 @@ class HomeViewController: UIViewController {
         
         tableView.delegate = self
         tableView.dataSource = self
+        
+        refreshControl.attributedTitle = NSAttributedString(string: "Pull to refresh")
+        refreshControl.addTarget(self, action: #selector(getDashboardServices), for: .valueChanged)
+        tableView.addSubview(refreshControl)
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -61,19 +66,7 @@ class HomeViewController: UIViewController {
         }
     }
     
-    func generateBarcode(from string: String) -> UIImage? {
-        let data = string.data(using: String.Encoding.ascii)
-        
-        if let filter = CIFilter(name: "CICode128BarcodeGenerator") {
-            filter.setValue(data, forKey: "inputMessage")
-            if let output = filter.outputImage {
-                return UIImage(ciImage: output)
-            }
-        }
-        return nil
-    }
-    
-    private func getDashboardServices() {
+    @objc private func getDashboardServices() {
         self.getUserStepCount { step in
             let parameters = SyncPointsModel(points: step)
             NetworkManager.shared.postUserStepSync(with: parameters) { result in
@@ -87,6 +80,7 @@ class HomeViewController: UIViewController {
                                 self.balanceLbl.text = response.balance.formatted()
                                 self.balanceLbl.isHidden = false
                                 APPDefaults.setString(key: DefaultsKey.lastSyncDate.rawValue, value: response.lastSyncDate)
+                                APPDefaults.setString(key: DefaultsKey.userReferenceId.rawValue, value: response.refNum)
                                 self.barcodeImage.image = self.generateBarcode(from: response.refNum)
                                 self.refNumberLbbl.text = response.refNum
                                 self.activityIndicator.stopAnimating()
@@ -108,6 +102,7 @@ class HomeViewController: UIViewController {
             case .success(let data):
                 self?.transactionList = self?.process(list: data.data) ?? []
                 self?.tableView.reloadData()
+                self?.refreshControl.endRefreshing()
             case .failure:
                 AlertHelper.showWarningCardAlertFromTop()
             }

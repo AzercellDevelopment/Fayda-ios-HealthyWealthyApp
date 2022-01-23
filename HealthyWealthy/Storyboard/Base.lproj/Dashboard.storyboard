@@ -450,6 +450,9 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Zol-BX-NBZ">
                                 <rect key="frame" x="16" y="526" width="382" height="157"/>
                             </mapView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5Nc-zt-vsH">
+                                <rect key="frame" x="16" y="510" width="382" height="157"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vcc-sw-1yt">
                                 <rect key="frame" x="74" y="699" width="266" height="50"/>
                                 <constraints>
@@ -465,12 +468,16 @@
                         <viewLayoutGuide key="safeArea" id="F70-mK-ruk"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="F70-mK-ruk" firstAttribute="trailing" secondItem="5Nc-zt-vsH" secondAttribute="trailing" constant="16" id="2AO-Fb-cyb"/>
                             <constraint firstItem="F70-mK-ruk" firstAttribute="trailing" secondItem="vcc-sw-1yt" secondAttribute="trailing" constant="74" id="4VK-o5-a2x"/>
                             <constraint firstItem="sIx-As-KVw" firstAttribute="trailing" secondItem="F70-mK-ruk" secondAttribute="trailing" id="92A-Fj-7LA"/>
                             <constraint firstItem="Zol-BX-NBZ" firstAttribute="leading" secondItem="F70-mK-ruk" secondAttribute="leading" constant="16" id="9to-54-Uxs"/>
                             <constraint firstItem="Zol-BX-NBZ" firstAttribute="top" secondItem="sIx-As-KVw" secondAttribute="bottom" constant="32" id="Kb8-8G-k3Y"/>
+                            <constraint firstItem="vcc-sw-1yt" firstAttribute="top" secondItem="5Nc-zt-vsH" secondAttribute="bottom" constant="32" id="SqA-k0-CdD"/>
                             <constraint firstItem="sIx-As-KVw" firstAttribute="top" secondItem="F70-mK-ruk" secondAttribute="top" constant="16" id="TmL-Kh-63v"/>
+                            <constraint firstItem="5Nc-zt-vsH" firstAttribute="leading" secondItem="F70-mK-ruk" secondAttribute="leading" constant="16" id="Yrl-s9-zNO"/>
                             <constraint firstItem="vcc-sw-1yt" firstAttribute="top" secondItem="Zol-BX-NBZ" secondAttribute="bottom" constant="16" id="f7p-uF-kwK"/>
+                            <constraint firstItem="5Nc-zt-vsH" firstAttribute="top" secondItem="sIx-As-KVw" secondAttribute="bottom" constant="16" id="fOc-fe-fLh"/>
                             <constraint firstItem="vcc-sw-1yt" firstAttribute="leading" secondItem="F70-mK-ruk" secondAttribute="leading" constant="74" id="gNu-Hf-j8g"/>
                             <constraint firstItem="sIx-As-KVw" firstAttribute="leading" secondItem="F70-mK-ruk" secondAttribute="leading" id="o6t-6x-Xw9"/>
                             <constraint firstItem="F70-mK-ruk" firstAttribute="bottom" secondItem="vcc-sw-1yt" secondAttribute="bottom" constant="64" id="oDO-Iq-X00"/>
@@ -480,6 +487,7 @@
                     <navigationItem key="navigationItem" id="0eo-7H-2ZY"/>
                     <connections>
                         <outlet property="addressLbl" destination="Clv-Ig-I85" id="bY4-qA-gs9"/>
+                        <outlet property="barcodeImage" destination="5Nc-zt-vsH" id="IgO-se-2R3"/>
                         <outlet property="currentDiscountLbl" destination="1cR-Zu-Z1R" id="NoU-9x-W0J"/>
                         <outlet property="currentEarnedDiscountView" destination="UTG-9m-fJL" id="jxO-2T-cFV"/>
                         <outlet property="currentStepCount" destination="BPt-Mi-wPK" id="Ivx-Jf-oyw"/>
