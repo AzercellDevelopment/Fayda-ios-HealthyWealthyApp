@@ -7,23 +7,106 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		17A81DB6CAC3973408DB759D /* Pods_HealthyWealthy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5A1A1661710516EBAB706B4 /* Pods_HealthyWealthy.framework */; };
 		4897596A279BEB370021CA31 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48975969279BEB370021CA31 /* AppDelegate.swift */; };
 		4897596C279BEB370021CA31 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4897596B279BEB370021CA31 /* SceneDelegate.swift */; };
-		4897596E279BEB370021CA31 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4897596D279BEB370021CA31 /* ViewController.swift */; };
-		48975971279BEB370021CA31 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4897596F279BEB370021CA31 /* Main.storyboard */; };
+		4897596E279BEB370021CA31 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4897596D279BEB370021CA31 /* HomeViewController.swift */; };
+		48975971279BEB370021CA31 /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4897596F279BEB370021CA31 /* Dashboard.storyboard */; };
 		48975973279BEB390021CA31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48975972279BEB390021CA31 /* Assets.xcassets */; };
 		48975976279BEB3A0021CA31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48975974279BEB3A0021CA31 /* LaunchScreen.storyboard */; };
+		48975980279BEB430021CA31 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4897597F279BEB430021CA31 /* HealthKit.framework */; };
+		48975985279BFA9C0021CA31 /* DateTimeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48975984279BFA9C0021CA31 /* DateTimeHelper.swift */; };
+		4897598F279C1F420021CA31 /* CoreMotionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4897598E279C1F420021CA31 /* CoreMotionHelper.swift */; };
+		48975994279C2FE60021CA31 /* Routing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48975993279C2FE60021CA31 /* Routing.swift */; };
+		48975996279C31A00021CA31 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48975995279C31A00021CA31 /* Main.storyboard */; };
+		48975999279C31D80021CA31 /* CustomButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48975998279C31D80021CA31 /* CustomButtons.swift */; };
+		4897599C279C37290021CA31 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4897599B279C37290021CA31 /* LoginVC.swift */; };
+		4897599F279C394B0021CA31 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4897599E279C394B0021CA31 /* MainTabBarController.swift */; };
+		489759A1279C3E620021CA31 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489759A0279C3E620021CA31 /* NetworkManager.swift */; };
+		489759A4279C3F100021CA31 /* APPDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489759A3279C3F100021CA31 /* APPDefaults.swift */; };
+		489759A6279C3FC50021CA31 /* LoginModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489759A5279C3FC50021CA31 /* LoginModels.swift */; };
+		489759A8279C440C0021CA31 /* EmailLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489759A7279C440C0021CA31 /* EmailLoginVC.swift */; };
+		489759AA279C464D0021CA31 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489759A9279C464D0021CA31 /* SignUpVC.swift */; };
+		489759AC279C4A900021CA31 /* AlertHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489759AB279C4A900021CA31 /* AlertHelper.swift */; };
+		489759B1279C60460021CA31 /* SyncPointsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489759B0279C60460021CA31 /* SyncPointsModel.swift */; };
+		489759B4279C7ED70021CA31 /* UIImageView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489759B3279C7ED70021CA31 /* UIImageView+Ext.swift */; };
+		489759B9279C83B90021CA31 /* MerchantViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489759B7279C83B90021CA31 /* MerchantViewCell.swift */; };
+		489759BA279C83B90021CA31 /* MerchantViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 489759B8279C83B90021CA31 /* MerchantViewCell.xib */; };
+		489759BC279C87860021CA31 /* MerchantGoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489759BB279C87860021CA31 /* MerchantGoViewController.swift */; };
+		489759C0279C8BD00021CA31 /* MerchantGoHeaderViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489759BE279C8BD00021CA31 /* MerchantGoHeaderViewCell.swift */; };
+		489759C1279C8BD00021CA31 /* MerchantGoHeaderViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 489759BF279C8BD00021CA31 /* MerchantGoHeaderViewCell.xib */; };
+		489759C4279C93780021CA31 /* ExchangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489759C3279C93780021CA31 /* ExchangeViewController.swift */; };
+		489759C6279CA4C80021CA31 /* MerchantsResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489759C5279CA4C80021CA31 /* MerchantsResponseModel.swift */; };
+		489759C9279CA68F0021CA31 /* MerchantModelList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489759C8279CA68F0021CA31 /* MerchantModelList.swift */; };
+		489759CC279CAD7F0021CA31 /* MerchantsDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489759CB279CAD7F0021CA31 /* MerchantsDetailsViewController.swift */; };
+		489759CE279CC4310021CA31 /* MerchantStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489759CD279CC4310021CA31 /* MerchantStatus.swift */; };
+		489759D0279CE17E0021CA31 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 489759CF279CE17E0021CA31 /* MapKit.framework */; };
+		489759D2279CF1800021CA31 /* CouponsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489759D1279CF1800021CA31 /* CouponsResponse.swift */; };
+		489759DA279CF4410021CA31 /* CouponTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489759D8279CF4410021CA31 /* CouponTableViewCell.swift */; };
+		489759DB279CF4410021CA31 /* CouponTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 489759D9279CF4410021CA31 /* CouponTableViewCell.xib */; };
+		489759DE279CFAD50021CA31 /* ExchangeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489759DD279CFAD50021CA31 /* ExchangeDetailViewController.swift */; };
+		489759E0279D077E0021CA31 /* TransactionHistoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489759DF279D077E0021CA31 /* TransactionHistoryModel.swift */; };
+		489759E4279D0C1D0021CA31 /* TransactionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489759E2279D0C1D0021CA31 /* TransactionTableViewCell.swift */; };
+		489759E5279D0C1D0021CA31 /* TransactionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 489759E3279D0C1D0021CA31 /* TransactionTableViewCell.xib */; };
+		489759E7279D0D3D0021CA31 /* RoundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489759E6279D0D3D0021CA31 /* RoundImageView.swift */; };
+		489759EC279D14F10021CA31 /* TransactionDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489759EB279D14F10021CA31 /* TransactionDetailsViewController.swift */; };
+		489759EF279D1AD40021CA31 /* LogOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489759EE279D1AD40021CA31 /* LogOutViewController.swift */; };
+		489759F3279D1CAE0021CA31 /* TransactionNotFoundCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489759F1279D1CAE0021CA31 /* TransactionNotFoundCell.swift */; };
+		489759F4279D1CAE0021CA31 /* TransactionNotFoundCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 489759F2279D1CAE0021CA31 /* TransactionNotFoundCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4784991D76F62DEE26EA6B8D /* Pods-HealthyWealthy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthyWealthy.release.xcconfig"; path = "Target Support Files/Pods-HealthyWealthy/Pods-HealthyWealthy.release.xcconfig"; sourceTree = "<group>"; };
 		48975966279BEB370021CA31 /* HealthyWealthy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthyWealthy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48975969279BEB370021CA31 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4897596B279BEB370021CA31 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4897596D279BEB370021CA31 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		48975970279BEB370021CA31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4897596D279BEB370021CA31 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		48975970279BEB370021CA31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Dashboard.storyboard; sourceTree = "<group>"; };
 		48975972279BEB390021CA31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		48975975279BEB3A0021CA31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		48975977279BEB3A0021CA31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4897597D279BEB420021CA31 /* HealthyWealthy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HealthyWealthy.entitlements; sourceTree = "<group>"; };
+		4897597F279BEB430021CA31 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		48975984279BFA9C0021CA31 /* DateTimeHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTimeHelper.swift; sourceTree = "<group>"; };
+		4897598E279C1F420021CA31 /* CoreMotionHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreMotionHelper.swift; sourceTree = "<group>"; };
+		48975993279C2FE60021CA31 /* Routing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routing.swift; sourceTree = "<group>"; };
+		48975995279C31A00021CA31 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		48975998279C31D80021CA31 /* CustomButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtons.swift; sourceTree = "<group>"; };
+		4897599B279C37290021CA31 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		4897599E279C394B0021CA31 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		489759A0279C3E620021CA31 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		489759A3279C3F100021CA31 /* APPDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APPDefaults.swift; sourceTree = "<group>"; };
+		489759A5279C3FC50021CA31 /* LoginModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModels.swift; sourceTree = "<group>"; };
+		489759A7279C440C0021CA31 /* EmailLoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailLoginVC.swift; sourceTree = "<group>"; };
+		489759A9279C464D0021CA31 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		489759AB279C4A900021CA31 /* AlertHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertHelper.swift; sourceTree = "<group>"; };
+		489759B0279C60460021CA31 /* SyncPointsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncPointsModel.swift; sourceTree = "<group>"; };
+		489759B3279C7ED70021CA31 /* UIImageView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Ext.swift"; sourceTree = "<group>"; };
+		489759B7279C83B90021CA31 /* MerchantViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MerchantViewCell.swift; sourceTree = "<group>"; };
+		489759B8279C83B90021CA31 /* MerchantViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MerchantViewCell.xib; sourceTree = "<group>"; };
+		489759BB279C87860021CA31 /* MerchantGoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MerchantGoViewController.swift; sourceTree = "<group>"; };
+		489759BE279C8BD00021CA31 /* MerchantGoHeaderViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MerchantGoHeaderViewCell.swift; sourceTree = "<group>"; };
+		489759BF279C8BD00021CA31 /* MerchantGoHeaderViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MerchantGoHeaderViewCell.xib; sourceTree = "<group>"; };
+		489759C3279C93780021CA31 /* ExchangeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeViewController.swift; sourceTree = "<group>"; };
+		489759C5279CA4C80021CA31 /* MerchantsResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MerchantsResponseModel.swift; sourceTree = "<group>"; };
+		489759C8279CA68F0021CA31 /* MerchantModelList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MerchantModelList.swift; sourceTree = "<group>"; };
+		489759CB279CAD7F0021CA31 /* MerchantsDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MerchantsDetailsViewController.swift; sourceTree = "<group>"; };
+		489759CD279CC4310021CA31 /* MerchantStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MerchantStatus.swift; sourceTree = "<group>"; };
+		489759CF279CE17E0021CA31 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		489759D1279CF1800021CA31 /* CouponsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponsResponse.swift; sourceTree = "<group>"; };
+		489759D8279CF4410021CA31 /* CouponTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponTableViewCell.swift; sourceTree = "<group>"; };
+		489759D9279CF4410021CA31 /* CouponTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CouponTableViewCell.xib; sourceTree = "<group>"; };
+		489759DD279CFAD50021CA31 /* ExchangeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeDetailViewController.swift; sourceTree = "<group>"; };
+		489759DF279D077E0021CA31 /* TransactionHistoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionHistoryModel.swift; sourceTree = "<group>"; };
+		489759E2279D0C1D0021CA31 /* TransactionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionTableViewCell.swift; sourceTree = "<group>"; };
+		489759E3279D0C1D0021CA31 /* TransactionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransactionTableViewCell.xib; sourceTree = "<group>"; };
+		489759E6279D0D3D0021CA31 /* RoundImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundImageView.swift; sourceTree = "<group>"; };
+		489759EB279D14F10021CA31 /* TransactionDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDetailsViewController.swift; sourceTree = "<group>"; };
+		489759EE279D1AD40021CA31 /* LogOutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOutViewController.swift; sourceTree = "<group>"; };
+		489759F1279D1CAE0021CA31 /* TransactionNotFoundCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionNotFoundCell.swift; sourceTree = "<group>"; };
+		489759F2279D1CAE0021CA31 /* TransactionNotFoundCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransactionNotFoundCell.xib; sourceTree = "<group>"; };
+		6355EE081B21B1C53BF7BD68 /* Pods-HealthyWealthy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthyWealthy.debug.xcconfig"; path = "Target Support Files/Pods-HealthyWealthy/Pods-HealthyWealthy.debug.xcconfig"; sourceTree = "<group>"; };
+		F5A1A1661710516EBAB706B4 /* Pods_HealthyWealthy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HealthyWealthy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +114,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48975980279BEB430021CA31 /* HealthKit.framework in Frameworks */,
+				489759D0279CE17E0021CA31 /* MapKit.framework in Frameworks */,
+				17A81DB6CAC3973408DB759D /* Pods_HealthyWealthy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2CB4CC95A19350EED31E5DDD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6355EE081B21B1C53BF7BD68 /* Pods-HealthyWealthy.debug.xcconfig */,
+				4784991D76F62DEE26EA6B8D /* Pods-HealthyWealthy.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		4897595D279BEB370021CA31 = {
 			isa = PBXGroup;
 			children = (
 				48975968279BEB370021CA31 /* HealthyWealthy */,
 				48975967279BEB370021CA31 /* Products */,
+				4897597E279BEB430021CA31 /* Frameworks */,
+				2CB4CC95A19350EED31E5DDD /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +153,287 @@
 		48975968279BEB370021CA31 /* HealthyWealthy */ = {
 			isa = PBXGroup;
 			children = (
-				48975969279BEB370021CA31 /* AppDelegate.swift */,
-				4897596B279BEB370021CA31 /* SceneDelegate.swift */,
-				4897596D279BEB370021CA31 /* ViewController.swift */,
-				4897596F279BEB370021CA31 /* Main.storyboard */,
-				48975972279BEB390021CA31 /* Assets.xcassets */,
-				48975974279BEB3A0021CA31 /* LaunchScreen.storyboard */,
+				489759B5279C83760021CA31 /* Views */,
+				489759B2279C7ECC0021CA31 /* Extensions */,
+				48975997279C31CF0021CA31 /* CustomViews */,
+				48975992279C2FDA0021CA31 /* Utilities */,
+				4897597D279BEB420021CA31 /* HealthyWealthy.entitlements */,
 				48975977279BEB3A0021CA31 /* Info.plist */,
+				4897598A279BFC470021CA31 /* Storyboard */,
+				48975989279BFC2B0021CA31 /* Supporting Files */,
+				48975988279BFC220021CA31 /* Service */,
+				48975987279BFC1D0021CA31 /* Models */,
+				48975986279BFC140021CA31 /* ViewControllers */,
+				48975981279BFA2C0021CA31 /* Helpers */,
 			);
 			path = HealthyWealthy;
+			sourceTree = "<group>";
+		};
+		4897597E279BEB430021CA31 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				489759CF279CE17E0021CA31 /* MapKit.framework */,
+				4897597F279BEB430021CA31 /* HealthKit.framework */,
+				F5A1A1661710516EBAB706B4 /* Pods_HealthyWealthy.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		48975981279BFA2C0021CA31 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				48975984279BFA9C0021CA31 /* DateTimeHelper.swift */,
+				4897598E279C1F420021CA31 /* CoreMotionHelper.swift */,
+				489759AB279C4A900021CA31 /* AlertHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		48975986279BFC140021CA31 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4897599A279C37210021CA31 /* Login */,
+				489759AF279C5EDF0021CA31 /* Dashboard */,
+				489759C7279CA6710021CA31 /* Merchants */,
+				489759C2279C935F0021CA31 /* Exchange */,
+				489759ED279D1ABD0021CA31 /* Logout */,
+				4897599D279C39180021CA31 /* MainTabBar */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		48975987279BFC1D0021CA31 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				489759D3279CF18F0021CA31 /* Login */,
+				489759D4279CF1990021CA31 /* Dashboard */,
+				489759D5279CF1A90021CA31 /* Merchants */,
+				489759D6279CF1B50021CA31 /* Exchange */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		48975988279BFC220021CA31 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				489759A0279C3E620021CA31 /* NetworkManager.swift */,
+				489759A3279C3F100021CA31 /* APPDefaults.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		48975989279BFC2B0021CA31 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				48975969279BEB370021CA31 /* AppDelegate.swift */,
+				4897596B279BEB370021CA31 /* SceneDelegate.swift */,
+				48975972279BEB390021CA31 /* Assets.xcassets */,
+				48975974279BEB3A0021CA31 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4897598A279BFC470021CA31 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				48975995279C31A00021CA31 /* Main.storyboard */,
+				4897596F279BEB370021CA31 /* Dashboard.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		48975992279C2FDA0021CA31 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				48975993279C2FE60021CA31 /* Routing.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		48975997279C31CF0021CA31 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				48975998279C31D80021CA31 /* CustomButtons.swift */,
+				489759E6279D0D3D0021CA31 /* RoundImageView.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		4897599A279C37210021CA31 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				4897599B279C37290021CA31 /* LoginVC.swift */,
+				489759A7279C440C0021CA31 /* EmailLoginVC.swift */,
+				489759A9279C464D0021CA31 /* SignUpVC.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		4897599D279C39180021CA31 /* MainTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				4897599E279C394B0021CA31 /* MainTabBarController.swift */,
+			);
+			path = MainTabBar;
+			sourceTree = "<group>";
+		};
+		489759AF279C5EDF0021CA31 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				489759E8279D14BE0021CA31 /* TransactionDetail */,
+				4897596D279BEB370021CA31 /* HomeViewController.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		489759B2279C7ECC0021CA31 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				489759B3279C7ED70021CA31 /* UIImageView+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		489759B5279C83760021CA31 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				489759F0279D1C780021CA31 /* TransactionNotFoundCell */,
+				489759E1279D0C050021CA31 /* TransactionCell */,
+				489759D7279CF4280021CA31 /* CouponCell */,
+				489759BD279C8B920021CA31 /* MerchantGoHeader */,
+				489759B6279C83800021CA31 /* MerchantGo */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		489759B6279C83800021CA31 /* MerchantGo */ = {
+			isa = PBXGroup;
+			children = (
+				489759B7279C83B90021CA31 /* MerchantViewCell.swift */,
+				489759B8279C83B90021CA31 /* MerchantViewCell.xib */,
+			);
+			path = MerchantGo;
+			sourceTree = "<group>";
+		};
+		489759BD279C8B920021CA31 /* MerchantGoHeader */ = {
+			isa = PBXGroup;
+			children = (
+				489759BE279C8BD00021CA31 /* MerchantGoHeaderViewCell.swift */,
+				489759BF279C8BD00021CA31 /* MerchantGoHeaderViewCell.xib */,
+			);
+			path = MerchantGoHeader;
+			sourceTree = "<group>";
+		};
+		489759C2279C935F0021CA31 /* Exchange */ = {
+			isa = PBXGroup;
+			children = (
+				489759DC279CFAB10021CA31 /* ExchangeDetail */,
+				489759C3279C93780021CA31 /* ExchangeViewController.swift */,
+			);
+			path = Exchange;
+			sourceTree = "<group>";
+		};
+		489759C7279CA6710021CA31 /* Merchants */ = {
+			isa = PBXGroup;
+			children = (
+				489759CA279CAD6A0021CA31 /* MerchantsDetails */,
+				489759BB279C87860021CA31 /* MerchantGoViewController.swift */,
+				489759C8279CA68F0021CA31 /* MerchantModelList.swift */,
+			);
+			path = Merchants;
+			sourceTree = "<group>";
+		};
+		489759CA279CAD6A0021CA31 /* MerchantsDetails */ = {
+			isa = PBXGroup;
+			children = (
+				489759CB279CAD7F0021CA31 /* MerchantsDetailsViewController.swift */,
+				489759CD279CC4310021CA31 /* MerchantStatus.swift */,
+			);
+			path = MerchantsDetails;
+			sourceTree = "<group>";
+		};
+		489759D3279CF18F0021CA31 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				489759A5279C3FC50021CA31 /* LoginModels.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		489759D4279CF1990021CA31 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				489759B0279C60460021CA31 /* SyncPointsModel.swift */,
+				489759DF279D077E0021CA31 /* TransactionHistoryModel.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		489759D5279CF1A90021CA31 /* Merchants */ = {
+			isa = PBXGroup;
+			children = (
+				489759C5279CA4C80021CA31 /* MerchantsResponseModel.swift */,
+			);
+			path = Merchants;
+			sourceTree = "<group>";
+		};
+		489759D6279CF1B50021CA31 /* Exchange */ = {
+			isa = PBXGroup;
+			children = (
+				489759D1279CF1800021CA31 /* CouponsResponse.swift */,
+			);
+			path = Exchange;
+			sourceTree = "<group>";
+		};
+		489759D7279CF4280021CA31 /* CouponCell */ = {
+			isa = PBXGroup;
+			children = (
+				489759D8279CF4410021CA31 /* CouponTableViewCell.swift */,
+				489759D9279CF4410021CA31 /* CouponTableViewCell.xib */,
+			);
+			path = CouponCell;
+			sourceTree = "<group>";
+		};
+		489759DC279CFAB10021CA31 /* ExchangeDetail */ = {
+			isa = PBXGroup;
+			children = (
+				489759DD279CFAD50021CA31 /* ExchangeDetailViewController.swift */,
+			);
+			path = ExchangeDetail;
+			sourceTree = "<group>";
+		};
+		489759E1279D0C050021CA31 /* TransactionCell */ = {
+			isa = PBXGroup;
+			children = (
+				489759E2279D0C1D0021CA31 /* TransactionTableViewCell.swift */,
+				489759E3279D0C1D0021CA31 /* TransactionTableViewCell.xib */,
+			);
+			path = TransactionCell;
+			sourceTree = "<group>";
+		};
+		489759E8279D14BE0021CA31 /* TransactionDetail */ = {
+			isa = PBXGroup;
+			children = (
+				489759EB279D14F10021CA31 /* TransactionDetailsViewController.swift */,
+			);
+			path = TransactionDetail;
+			sourceTree = "<group>";
+		};
+		489759ED279D1ABD0021CA31 /* Logout */ = {
+			isa = PBXGroup;
+			children = (
+				489759EE279D1AD40021CA31 /* LogOutViewController.swift */,
+			);
+			path = Logout;
+			sourceTree = "<group>";
+		};
+		489759F0279D1C780021CA31 /* TransactionNotFoundCell */ = {
+			isa = PBXGroup;
+			children = (
+				489759F1279D1CAE0021CA31 /* TransactionNotFoundCell.swift */,
+				489759F2279D1CAE0021CA31 /* TransactionNotFoundCell.xib */,
+			);
+			path = TransactionNotFoundCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +443,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4897597A279BEB3A0021CA31 /* Build configuration list for PBXNativeTarget "HealthyWealthy" */;
 			buildPhases = (
+				07D8AB3388DC89448E9C312D /* [CP] Check Pods Manifest.lock */,
 				48975962279BEB370021CA31 /* Sources */,
 				48975963279BEB370021CA31 /* Frameworks */,
 				48975964279BEB370021CA31 /* Resources */,
+				46037D8D4E0EFB1244638F0D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,34 +496,113 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48975996279C31A00021CA31 /* Main.storyboard in Resources */,
 				48975976279BEB3A0021CA31 /* LaunchScreen.storyboard in Resources */,
+				489759F4279D1CAE0021CA31 /* TransactionNotFoundCell.xib in Resources */,
+				489759BA279C83B90021CA31 /* MerchantViewCell.xib in Resources */,
+				489759C1279C8BD00021CA31 /* MerchantGoHeaderViewCell.xib in Resources */,
+				489759DB279CF4410021CA31 /* CouponTableViewCell.xib in Resources */,
 				48975973279BEB390021CA31 /* Assets.xcassets in Resources */,
-				48975971279BEB370021CA31 /* Main.storyboard in Resources */,
+				489759E5279D0C1D0021CA31 /* TransactionTableViewCell.xib in Resources */,
+				48975971279BEB370021CA31 /* Dashboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		07D8AB3388DC89448E9C312D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HealthyWealthy-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		46037D8D4E0EFB1244638F0D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HealthyWealthy/Pods-HealthyWealthy-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HealthyWealthy/Pods-HealthyWealthy-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HealthyWealthy/Pods-HealthyWealthy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		48975962279BEB370021CA31 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4897596E279BEB370021CA31 /* ViewController.swift in Sources */,
+				489759E7279D0D3D0021CA31 /* RoundImageView.swift in Sources */,
+				489759C9279CA68F0021CA31 /* MerchantModelList.swift in Sources */,
+				489759AA279C464D0021CA31 /* SignUpVC.swift in Sources */,
+				489759A4279C3F100021CA31 /* APPDefaults.swift in Sources */,
+				489759CE279CC4310021CA31 /* MerchantStatus.swift in Sources */,
+				489759F3279D1CAE0021CA31 /* TransactionNotFoundCell.swift in Sources */,
+				489759E0279D077E0021CA31 /* TransactionHistoryModel.swift in Sources */,
+				489759B9279C83B90021CA31 /* MerchantViewCell.swift in Sources */,
+				489759A8279C440C0021CA31 /* EmailLoginVC.swift in Sources */,
+				489759AC279C4A900021CA31 /* AlertHelper.swift in Sources */,
+				4897598F279C1F420021CA31 /* CoreMotionHelper.swift in Sources */,
+				489759BC279C87860021CA31 /* MerchantGoViewController.swift in Sources */,
+				48975985279BFA9C0021CA31 /* DateTimeHelper.swift in Sources */,
+				489759EC279D14F10021CA31 /* TransactionDetailsViewController.swift in Sources */,
+				489759CC279CAD7F0021CA31 /* MerchantsDetailsViewController.swift in Sources */,
+				489759A1279C3E620021CA31 /* NetworkManager.swift in Sources */,
+				489759EF279D1AD40021CA31 /* LogOutViewController.swift in Sources */,
+				489759C0279C8BD00021CA31 /* MerchantGoHeaderViewCell.swift in Sources */,
+				489759C6279CA4C80021CA31 /* MerchantsResponseModel.swift in Sources */,
+				4897599F279C394B0021CA31 /* MainTabBarController.swift in Sources */,
+				489759E4279D0C1D0021CA31 /* TransactionTableViewCell.swift in Sources */,
+				489759DA279CF4410021CA31 /* CouponTableViewCell.swift in Sources */,
+				489759A6279C3FC50021CA31 /* LoginModels.swift in Sources */,
+				489759B4279C7ED70021CA31 /* UIImageView+Ext.swift in Sources */,
+				4897599C279C37290021CA31 /* LoginVC.swift in Sources */,
+				48975994279C2FE60021CA31 /* Routing.swift in Sources */,
+				489759B1279C60460021CA31 /* SyncPointsModel.swift in Sources */,
+				489759C4279C93780021CA31 /* ExchangeViewController.swift in Sources */,
+				4897596E279BEB370021CA31 /* HomeViewController.swift in Sources */,
+				489759D2279CF1800021CA31 /* CouponsResponse.swift in Sources */,
 				4897596A279BEB370021CA31 /* AppDelegate.swift in Sources */,
 				4897596C279BEB370021CA31 /* SceneDelegate.swift in Sources */,
+				489759DE279CFAD50021CA31 /* ExchangeDetailViewController.swift in Sources */,
+				48975999279C31D80021CA31 /* CustomButtons.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		4897596F279BEB370021CA31 /* Main.storyboard */ = {
+		4897596F279BEB370021CA31 /* Dashboard.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				48975970279BEB370021CA31 /* Base */,
 			);
-			name = Main.storyboard;
+			name = Dashboard.storyboard;
 			sourceTree = "<group>";
 		};
 		48975974279BEB3A0021CA31 /* LaunchScreen.storyboard */ = {
@@ -284,17 +734,24 @@
 		};
 		4897597B279BEB3A0021CA31 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6355EE081B21B1C53BF7BD68 /* Pods-HealthyWealthy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HealthyWealthy/HealthyWealthy.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 5P4D29MK2S;
+				DEVELOPMENT_TEAM = 6X4M26MJRD;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = HealthyWealthy/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Healthy & Wealthy";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "We want to use your health records in order  to track your steps count";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "We want to use your health records in order  to track your steps count";
+				INFOPLIST_KEY_NSMotionUsageDescription = "We are using motion usage in order to track your step count.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -302,27 +759,34 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.aykhanhajiyev.HealthyWealthy;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aykhanhajiyev.healthyapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		4897597C279BEB3A0021CA31 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4784991D76F62DEE26EA6B8D /* Pods-HealthyWealthy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HealthyWealthy/HealthyWealthy.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 5P4D29MK2S;
+				DEVELOPMENT_TEAM = 6X4M26MJRD;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = HealthyWealthy/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Healthy & Wealthy";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "We want to use your health records in order  to track your steps count";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "We want to use your health records in order  to track your steps count";
+				INFOPLIST_KEY_NSMotionUsageDescription = "We are using motion usage in order to track your step count.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -330,11 +794,11 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.aykhanhajiyev.HealthyWealthy;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aykhanhajiyev.healthyapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

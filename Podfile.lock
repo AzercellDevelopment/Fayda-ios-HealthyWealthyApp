@@ -1,0 +1,30 @@
+PODS:
+  - Alamofire (4.8.2)
+  - ShiftTransitions (0.1.2)
+  - SkyFloatingLabelTextField (4.0.0)
+  - SwiftMessages (9.0.6):
+    - SwiftMessages/App (= 9.0.6)
+  - SwiftMessages/App (9.0.6)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.8.2)
+  - ShiftTransitions
+  - SkyFloatingLabelTextField
+  - SwiftMessages
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - ShiftTransitions
+    - SkyFloatingLabelTextField
+    - SwiftMessages
+
+SPEC CHECKSUMS:
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  ShiftTransitions: d728534308eebf9076be10e301349f745e3c3396
+  SkyFloatingLabelTextField: 79ddc40e4ad59707fedbb48d605417aee48bb78a
+  SwiftMessages: f0c7ef4705a570ad6c5e208b611f4333e660ed92
+
+PODFILE CHECKSUM: 40f5df7ec9c86e587f1a457d9c363e0dcb6e1d98
+
+COCOAPODS: 1.11.2
